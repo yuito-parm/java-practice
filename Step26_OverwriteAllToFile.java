@@ -45,6 +45,7 @@ public class Step26_OverwriteAllToFile {
             System.out.println("終了します。");
         }
 
+        scanner.close();
         BufferedWriter writer = new BufferedWriter(new FileWriter("people.txt"));
         for (Person p : people) {
             writer.write(p.getName() + "," + p.getScore());

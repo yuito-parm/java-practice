@@ -12,10 +12,10 @@ public class Step31_ShowListGui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 300);
 
-        List<Person> people = new ArrayList<>();
+        java.util.List<Person> people = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader("people.json"));
-            people = new Gson().fromJson(reader, new TypeToken<List<Person>>(){}.getType());
+            people = new Gson().fromJson(reader, new TypeToken<java.util.List<Person>>(){}.getType());
             reader.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(frame, "読み込みエラー" + e.getMessage());

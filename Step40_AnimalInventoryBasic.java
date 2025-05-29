@@ -94,7 +94,7 @@ public class Step40_AnimalInventoryBasic {
                 stockField.setText("");
                 statusField.setText("");
             } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(frame, "点数は数字で入力してください。");
+                JOptionPane.showMessageDialog(frame, "価格・在庫は数字で入力してください。");
             } catch (IOException ex) {
                 JOptionPane.showMessageDialog(frame, "保存エラー" + ex.getMessage());
             }

@@ -11,7 +11,7 @@ public class Step38_AddPersonGui {
     public static void main(String[] args) {
         JFrame frame = new JFrame("新規追加できるGUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 450);
+        frame.setSize(1000, 450);
 
         String[] columns = {"名前", "点数"};
         JTable table = new JTable(new String[0][2], columns);

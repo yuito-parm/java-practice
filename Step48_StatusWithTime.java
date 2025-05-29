@@ -206,6 +206,7 @@ public class Step48_StatusWithTime {
             int row = table.getSelectedRow();
             if (row >= 0) {
                 Product selected = products.get(row);
+                Step49_ShowHistoryWindow.open(selected.getAllStatus());
                 java.util.List<Map<String, String>> history = selected.getAllStatus();
                 StringBuilder message = new StringBuilder();
                 for (Map<String, String> entry : history) {
